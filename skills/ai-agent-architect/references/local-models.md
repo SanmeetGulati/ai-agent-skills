@@ -1,0 +1,7 @@
+# Local model selection
+
+Identify the workload and acceptance criteria: languages, coding or reasoning needs, tool calling and structured output, context length, concurrency, latency, privacy, and budget. Inspect accessible hardware and runtimes using read-only commands when useful: OS, CPU/GPU, available RAM or unified memory and VRAM, and installed inference software. Avoid assuming the current machine is the intended deployment host. If important hardware details are missing, state the gap and give conditional options or ask for them.
+
+Research current model cards, licenses, runtime documentation, and relevant benchmarks. Compare model and quantization variants by workload quality, tool calling support, context, runtime compatibility, memory footprint, speed, and usage restrictions. Model weights are only part of memory use: allow for runtime overhead, KV cache, context length, and concurrency; treat estimated fit and throughput as estimates, not measurements.
+
+Recommend a primary candidate and alternatives where evidence supports them. Cite sources and dates where relevant, separate vendor claims from independent measurements, and flag benchmark or hardware mismatch. Propose a small representative local evaluation covering task success, tool-call correctness, latency, memory, and failure cases against a baseline. Do not download models or run expensive benchmarks without authorization.
